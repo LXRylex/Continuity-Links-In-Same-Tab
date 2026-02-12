@@ -4,9 +4,9 @@ As the title says, Let's you open links in same tab without opening a new tab
 
 ## Features:
 
-Toggle ON/OFF
-Mouse-Middle Click = Open links in new tab
-CTRL+Click = Also open links in new tab
+- Toggle ON/OFF
+- Mouse-Middle Click = Open links in new tab
+- CTRL+Click = Also open links in new tab
 
 > [!WARNING]
 > This Extension is **experimental**.
