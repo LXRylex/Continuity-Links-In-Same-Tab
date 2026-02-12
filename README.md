@@ -1,4 +1,4 @@
-# Continuity - Experimwental Extension
+# Continuity - Experimental Extension
 
 As the title says, Let's you open links in same tab without opening a new tab
 
