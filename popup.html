@@ -1,0 +1,63 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Continuity - Links In Same Tab by Yuilix</title>
+  <link rel="stylesheet" href="popup.css" />
+</head>
+<body>
+  <div class="window">
+    <div class="titlebar">
+      <div class="title">Continuity - Links In Same Tab</div>
+    </div>
+
+    <div class="content">
+      <div class="panel">
+        <div class="row">
+          <div class="label">
+            <div class="labelTop">STATUS</div>
+            <div id="statusText" class="labelBottom">...</div>
+          </div>
+
+          <label class="switch" title="Enable / Disable">
+            <input id="toggle" type="checkbox" />
+            <span class="track" aria-hidden="true">
+              <span class="knob"></span>
+            </span>
+          </label>
+        </div>
+
+        <div class="hint" id="hint"></div>
+
+        <div class="hr"></div>
+
+        <div class="iconbar" role="group" aria-label="Links">
+          <button class="iconbtn" id="btnReview" type="button" title="Leave a review" aria-label="Leave a review">
+            <!-- star -->
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M12 2l2.9 6.6 7.1.6-5.4 4.7 1.6 7-6.2-3.6-6.2 3.6 1.6-7L2 9.2l7.1-.6L12 2z"/>
+            </svg>
+          </button>
+
+          <button class="iconbtn" id="btnDonate" type="button" title="Donate" aria-label="Donate">
+            <!-- heart -->
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M12 21s-7.2-4.6-9.5-8.6C.6 9.2 2.2 6 5.8 6c2 0 3.2 1.2 4.2 2.4C11 7.2 12.2 6 14.2 6c3.6 0 5.2 3.2 3.3 6.4C19.2 16.4 12 21 12 21z"/>
+            </svg>
+          </button>
+
+          <button class="iconbtn" id="btnGithub" type="button" title="GitHub" aria-label="GitHub">
+            <!-- github mark -->
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M12 .8a11.2 11.2 0 00-3.5 21.8c.6.1.8-.3.8-.6v-2.2c-3.2.7-3.9-1.3-3.9-1.3-.6-1.4-1.4-1.8-1.4-1.8-1.2-.8.1-.8.1-.8 1.3.1 2 .1 2.6 1.4 1.1 2 3 1.4 3.7 1.1.1-.8.4-1.4.7-1.7-2.6-.3-5.3-1.3-5.3-5.9 0-1.3.5-2.4 1.3-3.2-.1-.3-.6-1.6.1-3.2 0 0 1.1-.4 3.3 1.2a11.4 11.4 0 016 0c2.2-1.6 3.3-1.2 3.3-1.2.7 1.6.2 2.9.1 3.2.8.8 1.3 1.9 1.3 3.2 0 4.6-2.7 5.6-5.3 5.9.4.4.8 1.1.8 2.2v3.2c0 .3.2.7.8.6A11.2 11.2 0 0012 .8z"/>
+            </svg>
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="popup.js"></script>
+</body>
+</html>

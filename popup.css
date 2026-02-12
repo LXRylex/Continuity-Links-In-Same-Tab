@@ -1,0 +1,163 @@
+:root{
+  color-scheme: dark;
+  --bg: #001a33;
+  --win: #c0c0c0;
+  --win2: #dcdcdc;
+  --shadow: #000;
+  --hi: #fff;
+  --mid: #7a7a7a;
+  --blue: #000080;
+  --purple: #B38AFF;
+}
+
+*{ box-sizing:border-box; }
+
+body{
+  margin:0;
+  width: 270px;
+  background: repeating-linear-gradient(
+    45deg,
+    #001a33 0px,
+    #001a33 8px,
+    #00122a 8px,
+    #00122a 16px
+  );
+  font: 13px/1.2 "MS Sans Serif", Tahoma, Verdana, Arial, sans-serif;
+}
+
+.window{
+  margin: 10px;
+  background: var(--win);
+  border: 2px solid var(--shadow);
+  box-shadow:
+    2px 2px 0 var(--shadow),
+    -1px -1px 0 var(--hi),
+    0 0 0 2px rgba(0,0,0,.25);
+}
+
+.titlebar{
+  height: 30px;
+  background: linear-gradient(90deg, var(--blue), #0033aa);
+  color: #fff;
+  display:flex;
+  align-items:center;
+  padding: 0 8px;
+  border-bottom: 2px solid var(--shadow);
+}
+
+.title{
+  font-weight: 700;
+  letter-spacing: .3px;
+  text-shadow: 1px 1px 0 rgba(0,0,0,.35);
+}
+
+.content{
+  padding: 10px;
+  background: radial-gradient(circle at top left, rgba(179,138,255,.22), transparent 45%);
+}
+
+.panel{
+  background: var(--win2);
+  padding: 10px;
+  border: 2px solid #000;
+  box-shadow: -1px -1px 0 var(--hi), 1px 1px 0 var(--mid);
+}
+
+.row{
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap: 10px;
+}
+
+.labelTop{
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: .4px;
+  color: #111;
+}
+
+.labelBottom{
+  margin-top: 2px;
+  font-weight: 700;
+  color: #111;
+}
+
+.hint{
+  margin-top: 8px;
+  font-size: 11px;
+  color: #222;
+}
+
+.hr{
+  height: 2px;
+  margin: 10px 0;
+  background: linear-gradient(90deg, #000, #444, #000);
+}
+
+/* Toggle switch */
+.switch{
+  position: relative;
+  width: 56px;
+  height: 26px;
+  display:inline-block;
+  user-select:none;
+}
+.switch input{ display:none; }
+
+.track{
+  position:absolute;
+  inset:0;
+  background: #9b9b9b;
+  border: 2px solid #000;
+  box-shadow: -1px -1px 0 var(--hi), 1px 1px 0 var(--mid);
+}
+
+.knob{
+  position:absolute;
+  top: 2px;
+  left: 2px;
+  width: 22px;
+  height: 20px;
+  background: var(--win);
+  border: 2px solid #000;
+  box-shadow: -1px -1px 0 var(--hi), 1px 1px 0 var(--mid);
+  transition: transform 120ms steps(2, end);
+}
+
+.switch input:checked + .track{
+  background: linear-gradient(90deg, var(--purple), #6d3cff);
+}
+.switch input:checked + .track .knob{
+  transform: translateX(28px);
+}
+
+/* Icon bar */
+.iconbar{
+  display:flex;
+  justify-content: space-between;
+  gap: 8px;
+}
+
+.iconbtn{
+  flex: 1;
+  height: 36px;
+  background: var(--win);
+  border: 2px solid #000;
+  box-shadow: -1px -1px 0 var(--hi), 1px 1px 0 var(--mid);
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  cursor: pointer;
+  padding: 0;
+}
+
+.iconbtn:active{
+  box-shadow: inset -1px -1px 0 var(--hi), inset 1px 1px 0 var(--mid);
+}
+
+.iconbtn svg{
+  width: 18px;
+  height: 18px;
+  fill: #000;
+}
