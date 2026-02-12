@@ -15,4 +15,4 @@ CTRL+Click = Also open links in new tab
 ## Screenshots
 <img width="273" height="209" alt="image" src="https://github.com/user-attachments/assets/422dcdb5-f2f7-482d-a317-0e434f306e5c" />
 
-Get it here: (soon)
+Get it here: https://addons.mozilla.org/en-CA/firefox/addon/continuity-linksinsametab/ (STATUS: in review process)
