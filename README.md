@@ -10,7 +10,7 @@ As the title says, Let's you open links in same tab without opening a new tab
 
 > [!WARNING]
 > This Extension is **experimental**.
-> Expect breaking/changes and unstable behavior. Only available at Firefox browsers.
+> Expect breaking/changes and unstable behavior. Only available at Firefox browsers. False flagged that it is available on android, it is NOT.
 
 ## Screenshots
 <img width="273" height="209" alt="image" src="https://github.com/user-attachments/assets/422dcdb5-f2f7-482d-a317-0e434f306e5c" />
